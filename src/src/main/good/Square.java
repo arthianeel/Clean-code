@@ -1,6 +1,6 @@
 package src.main.good;
 
-public class Square extends Shape implements Printype{
+public class Square extends Shape implements Printype,DI{
     public void setHeight(int h) {
         this.height = h;
         this.width= h;
