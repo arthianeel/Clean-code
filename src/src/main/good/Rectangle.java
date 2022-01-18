@@ -1,6 +1,6 @@
 package src.main.good;
 
-public class Rectangle extends Shape implements PrintH,PrintW{   //follows single responsibility principle
+public class Rectangle extends Shape implements Area,Perimeter{   //follows single responsibility principle
     public void setHeight(int h) {
         height = h;
     }
@@ -11,12 +11,11 @@ public class Rectangle extends Shape implements PrintH,PrintW{   //follows singl
     {
         this.type=s;
     }
-
-    public void printheight() {
-        System.out.println(height);
+    public void printarea(){
+        System.out.println(height*width);
     }
 
-    public void printwidth() {
-        System.out.println(width);
+    public void printperimeter() {
+        System.out.println(2*(height+width));
     }
 }
