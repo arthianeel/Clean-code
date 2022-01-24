@@ -7,6 +7,11 @@ public class Rectangle extends Shape implements Area,Perimeter{   //follows sing
     public void setWidth(int w) {
         this.width = w;
     }
+
+    public void setDiagnol()
+    {
+        diagnol=(height*height)+(width*width);
+    }
     public void setType(String s)                          //open closed principle where rectangle and square extend shape class instead of modifying existing class
     {
         this.type=s;

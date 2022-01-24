@@ -1,5 +1,6 @@
 package src.main.good;
 
-public interface DI {    //follows dependency inversion principle
-    public void dip();
+abstract public class DI {    //follows dependency inversion principle
+    abstract public void dip();
+    int a=10;
 }

@@ -1,14 +1,14 @@
 package src.main.bad;
 
-public class Square extends Rectangle{
-    public void setHeight(int h) {            //violates liskov substitution principle
+public class Square extends Rectangle,DIP{
+    public void setEdge(int h) {
         this.height = h;
         this.width= h;
     }
+    public void setDiagnol()               //violates liskov substitution principle
+    {
+        diagnol=height*1.414;
+    }
     DIP obj=new DIP();           //violates DIP since any change in dip will have to be changed in square1
 
-    public void setWeight(int w ){
-        this.width = w;
-        this.height = w;
-    }
 }
